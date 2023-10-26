@@ -1,4 +1,4 @@
-public class Stack {
+public class Stack<T> {
 
     private int size;
     private StackNode top;
@@ -13,10 +13,10 @@ public class Stack {
         top = n;
     }
 
-    public Type <T> pop() {
+    public T pop() {
         StackNode oldTop = top;
         top = top.getParent();
-        return oldTop.getData();
+        return (T) oldTop.getData();
     }
 
     public StackNode peek() {
