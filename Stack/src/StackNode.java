@@ -19,7 +19,7 @@ public class StackNode<T> {
     }
 
     //Constructor that sets data, parent, and child
-    public StackNode(T data, StackNode parent, StackNode child) {
+    public StackNode(T data, StackNode parent) {
         this.data = data;
         this.parent = parent;
     }

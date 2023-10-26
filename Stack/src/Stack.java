@@ -1,4 +1,4 @@
-public class Stack {
+public class Stack<T> {
 
     private int size;
     private StackNode top;
@@ -7,9 +7,9 @@ public class Stack {
 
     }
 
-    public void push(StackNode n) {
+    public void push(T data) {
         size++;
-        n.setParent(top);
+        StackNode n = new StackNode(data, top);
         top = n;
     }
 
