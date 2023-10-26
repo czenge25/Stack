@@ -14,6 +14,7 @@ public class Stack<T> {
     }
 
     public T pop() {
+        size--;
         StackNode oldTop = top;
         top = top.getParent();
         return (T) oldTop.getData();
