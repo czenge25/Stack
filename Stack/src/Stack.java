@@ -19,8 +19,8 @@ public class Stack<T> {
         return (T) oldTop.getData();
     }
 
-    public StackNode peek() {
-
+    public T peek() {
+        return (T)top.getData();
     }
 
     public boolean isEmpty() {
