@@ -13,8 +13,10 @@ public class Stack<T> {
         top = n;
     }
 
-    public StackNode pop() {
-
+    public T pop() {
+        StackNode oldTop = top;
+        top = top.getParent();
+        return (T) oldTop.getData();
     }
 
     public StackNode peek() {
