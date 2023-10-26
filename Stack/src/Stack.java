@@ -7,9 +7,9 @@ public class Stack<T> {
 
     }
 
-    public void push(StackNode n) {
+    public void push(T data) {
         size++;
-        n.setParent(top);
+        StackNode n = new StackNode(data, top);
         top = n;
     }
 
